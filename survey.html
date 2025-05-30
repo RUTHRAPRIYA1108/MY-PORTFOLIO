@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+      body { 
+            font-family: Arial, sans-serif;
+            background-color: #0a24e7;
+            margin: 0;
+            padding:20px;
+        }
+        .container{
+            max-width: 600px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border-radius:8px;
+            box-shadow: 02px 10px rgba(0,0,0,0.1);
+        }
+        h1{
+            text-align: center;            color:#333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border:1px solid #ccc;
+            border-radius:4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],input[type="checkbox"]{
+            margin-right:10px;
+        }
+        input[type="submit"] {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size:16px;
+            width:100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body >
+   
+<div class="container">
+    <h1>Survey Form</h1>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label>Age Group:</label>
+        <input type="radio" id="age1" name="age" value="18-25">
+        <label for="age1">18-25</label>
+        <input type="radio" id="age2" name="age" value="26-35">
+        <label for="age2">26-35</label>
+        <input type="radio" id="age3" name="age" value="36-45">
+        <label for="age3">36-45</label>
+        <input type="radio" id="age4" name="age" value="46+">
+        <label for="age4">46+</label>
+    </div>
+
+    <div class="form-group">
+        <label>Interests:</label>
+        <input type="checkbox" id="interest1" name="interests" value="Sports">
+        <label for="interest1">Sports</label>
+        <input type="checkbox" id="interest2" name="interests" value="Music">
+        <label for="interest2">Music</label>
+        <input type="checkbox" id="interest3" name="interests" value="Travel">
+        <label for="interest3">Travel</label>
+        <input type="checkbox" id="interest4" name="interests" value="Reading">
+        <label for="interest4">Reading</label>
+    </div>
+</div>
+    <div class="form-group">
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+    </div>
+
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

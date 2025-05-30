@@ -1,0 +1,220 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #cb21a3;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d53edd;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('hero-background.jpg'); /* Replace with your image */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.highlight {
+    color: #e926b5; /* Highlight color for emphasis */
+}
+
+.btn {
+    background-color: #d53ba9;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.btn:hover {
+    background-color: #7e095f; /* Darker shade on hover */
+    transform: translateY(-5px); /* Lifts the button up */
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    margin: 20px 0; /* Space around the links */
+}
+
+.social-links a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.social-links img {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for lifting effect */
+}
+
+.project-card:hover {
+    transform: translateY(-15px); /* Lifts the card up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #d425bd;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.contact-form button:hover {
+    background-color: #7d0d48; /* Darker shade on hover */
+    transform: translateY(-5px); /* Lifts the button up */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons on smaller screens */
+    }
+}
