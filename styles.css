@@ -218,3 +218,60 @@ footer {
         width: 100%; /* Full width buttons on smaller screens */
     }
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links vertically */
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Add spacing between links */
+    }
+
+    .hero-section {
+        padding: 30px 10px; /* Reduce padding for smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 32px; /* Adjust font size for smaller screens */
+    }
+
+    .btn {
+        font-size: 0.9em; /* Adjust button font size */
+        padding: 10px 15px; /* Adjust button padding */
+        width: 100%; /* Make buttons full width */
+    }
+
+    .project-card {
+        width: 100%; /* Make project cards full width */
+    }
+
+    .social-links img {
+        width: 25px; /* Reduce icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px; /* Further reduce font size for very small screens */
+    }
+
+    .btn {
+        font-size: 0.8em; /* Adjust button font size further */
+        padding: 8px 12px; /* Adjust button padding further */
+    }
+
+    .project-card {
+        margin: 10px; /* Reduce margin for smaller screens */
+    }
+
+    .social-links img {
+        width: 20px; /* Further reduce icon size */
+    }
+}
